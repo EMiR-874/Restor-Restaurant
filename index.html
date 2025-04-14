@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restor Restaurant</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <link rel="icon" type="image/x-icon" href="/Images/favicon-32x32.png" />
+  </head>
+
+  <body>
+    <!---------------------------------------------------------------------------------------------------------------------------- LOADING -->
+    <!-- <div id="loading">
+      <div class="spinner"></div>
+      <p>Loading...</p>
+    </div> -->
+
+    <section class="welcome">
+      <!---------------------------------------------------------------------------------------------------------------------------- MAIN NAV -->
+      <nav id="navbar">
+        <div class="nav-logo">
+          <img src="Images/Logo.png" height="90px" alt="Logo of restaurant" />
+          <div class="rnl" id="toggle-rnl">
+            <div class="rnl1"></div>
+            <div class="rnl2"></div>
+            <div class="rnl3"></div>
+          </div>
+        </div>
+
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Menu</a>
+          <a href="#">Location</a>
+          <a href="#">Chefs</a>
+          <a href="#">About</a>
+        </div>
+
+        <div class="nav-dropdown">
+          <button onclick="scrollToSection('booking')">Book a table</button>
+        </div>
+      </nav>
+
+      <!---------------------------------------------------------------------------------------------------------------------------- WELCOME IMAGE -->
+
+      <section class="img-slider">
+        <div class="welcome-slider-wrapper">
+          <div class="welcome-slider">
+            <div class="first-welcome-img images welcome-text-style .welcome-slide" id="welcome-slide-1">
+              <p>Welcome to Restor restaurant, we serve the best</p>
+              <h1>Tasteful Flavor Haven</h1>
+              <p>
+                Discover the art of culinary excellence with every bite. <br />
+                Savor exceptional flavors in an ambiance crafted for pure enjoyment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------------- ABOUT US -->
+
+    <section class="about">
+      <div class="about-content-wrapper">
+        <div class="our-vision">
+          <p class="about-subT">About Restaurant</p>
+          <h1 class="about-title">Our Vision</h1>
+          <p class="about-subT">
+            Where food, design, and ambiance unite <br />
+            to craft an unforgettable experience.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut magna massa. Proin pretium
+            hendrerit risus, nec tincidunt risus hendrerit mollis.<br /><br />
+
+            While social distancing is one of our top priorities, guests may still enjoy beautiful surrounding
+            nature landscapes while dining.
+          </p>
+          <svg width="300" viewBox="0 0 378 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              id="signature"
+              d="M20.4 89.576C13.9147 89.832 9.008 88.5093 5.68 85.608C2.43733 82.7067 0.816 78.5253 0.816 73.064C0.816 69.736 1.54133 65.64 2.992 60.776C7.00267 48.488 12.6347 37.736 19.888 28.52C24.752 22.376 29.872 17.2133 35.248 13.032C40.624 8.85066 45.9573 5.69333 51.248 3.56C56.5387 1.34133 61.488 0.231995 66.096 0.231995C66.5227 0.231995 67.0347 0.274661 67.632 0.359993C68.2293 0.359993 68.912 0.402662 69.68 0.487999C72.496 0.914665 74.9707 2.152 77.104 4.2C79.3227 6.248 80.432 8.808 80.432 11.88C80.432 13.5013 80.0907 15.208 79.408 17C78.5547 19.3893 76.4213 22.4613 73.008 26.216C69.68 29.9707 65.4987 33.5547 60.464 36.968C55.5147 40.296 50.3093 42.728 44.848 44.264C43.1413 44.6907 41.904 44.904 41.136 44.904C38.1493 44.904 36.656 43.5387 36.656 40.808C36.656 37.48 38.8747 33.0853 43.312 27.624C44.5067 26.0027 45.5733 25.192 46.512 25.192C47.024 25.2773 47.28 25.6613 47.28 26.344C47.1947 26.856 46.7253 27.6667 45.872 28.776C42.7147 32.9573 41.136 36.3707 41.136 39.016C41.136 40.04 41.392 40.808 41.904 41.32C42.5013 41.832 43.2267 42.0027 44.08 41.832C49.0293 40.808 53.4667 39.016 57.392 36.456C61.3173 33.896 64.688 30.824 67.504 27.24C70.4053 23.5707 72.624 19.7307 74.16 15.72C74.8427 13.928 75.184 12.3067 75.184 10.856C75.184 8.72266 74.4587 7.10133 73.008 5.992C71.6427 4.79733 69.8933 4.2 67.76 4.2C62.4693 4.2 55.6853 6.93066 47.408 12.392C41.776 16.0613 36.3147 20.4987 31.024 25.704C25.7333 30.9093 21.04 36.5413 16.944 42.6C12.9333 48.5733 9.94667 54.632 7.984 60.776C6.78933 64.5307 6.192 68.0293 6.192 71.272C6.192 75.88 7.42933 79.4213 9.904 81.896C12.464 84.456 16.0053 85.736 20.528 85.736C25.4773 85.736 31.408 83.7307 38.32 79.72C42.672 77.16 46.9813 74.216 51.248 70.888C55.5147 67.56 59.4827 64.0613 63.152 60.392C66.9067 56.7227 70.064 53.1813 72.624 49.768C73.3067 49.0853 73.8613 48.744 74.288 48.744C74.544 48.744 74.672 48.9147 74.672 49.256C74.672 50.1093 74.3307 51.0053 73.648 51.944C71.6 54.6747 69.2533 57.448 66.608 60.264C64.048 62.9947 61.1467 65.8107 57.904 68.712C53.6373 72.552 49.2427 76.0507 44.72 79.208C40.1973 82.28 35.8453 84.712 31.664 86.504C27.4827 88.3813 23.728 89.4053 20.4 89.576ZM76.612 81.768C76.2707 81.768 76.0147 81.3413 75.844 80.488C75.6733 79.6347 75.588 79.1653 75.588 79.08C75.588 78.6533 75.716 78.312 75.972 78.056C78.788 76.6053 80.5373 75.752 81.22 75.496C81.3053 75.4107 81.476 75.368 81.732 75.368C82.1587 75.368 82.244 75.9227 81.988 77.032C81.5613 78.568 81.348 79.72 81.348 80.488C81.348 80.744 81.092 80.9573 80.58 81.128C79.9827 81.2987 79.2573 81.4267 78.404 81.512C77.636 81.6827 77.0387 81.768 76.612 81.768ZM138.607 96.616C137.498 96.616 136.943 96.0187 136.943 94.824C136.943 93.8 137.583 92.008 138.863 89.448C140.058 87.144 142.063 84.1573 144.879 80.488C147.695 76.7333 151.236 72.3387 155.503 67.304C157.21 63.5493 158.788 59.7093 160.239 55.784C161.69 51.8587 163.012 47.8053 164.207 43.624C165.828 37.9067 167.023 33.2987 167.791 29.8C168.644 26.216 169.071 23.1867 169.071 20.712C169.071 15.7627 167.194 13.288 163.439 13.288C157.039 13.288 150.426 15.592 143.599 20.2C139.162 23.272 134.98 26.856 131.055 30.952C127.13 35.048 123.674 39.3147 120.687 43.752C117.786 48.104 115.567 52.2853 114.031 56.296C113.178 58.2587 112.751 60.008 112.751 61.544C112.751 64.2747 114.244 65.64 117.231 65.64C118.767 65.64 120.986 65.128 123.887 64.104C126.703 63.08 129.69 61.6293 132.847 59.752C136.004 57.8747 139.119 55.7413 142.191 53.352C145.263 50.9627 147.994 48.5307 150.383 46.056C151.578 44.8613 152.559 44.264 153.327 44.264C153.754 44.264 153.967 44.4773 153.967 44.904C153.967 45.416 153.583 46.056 152.815 46.824C150.084 49.5547 146.842 52.3707 143.087 55.272C139.332 58.088 135.535 60.648 131.695 62.952C127.855 65.256 124.271 67.048 120.943 68.328C118.212 69.4373 115.652 69.992 113.263 69.992C109.338 69.992 107.375 68.1147 107.375 64.36C107.375 61.9707 108.058 59.112 109.423 55.784C111.898 49.7253 116.25 42.984 122.479 35.56C126.746 30.6107 131.311 26.1307 136.175 22.12C141.124 18.024 146.116 14.7813 151.151 12.392C156.186 10.0027 160.922 8.808 165.359 8.808C171.588 8.808 174.703 12.5627 174.703 20.072C174.703 22.888 174.319 26.0453 173.551 29.544C172.783 33.0427 171.716 37.0533 170.351 41.576C170.18 42.088 170.01 42.6427 169.839 43.24C169.668 43.752 169.498 44.3067 169.327 44.904C168.9 46.5253 168.388 48.2747 167.791 50.152C167.194 51.944 166.468 53.9067 165.615 56.04C167.492 54.0773 169.37 52.2427 171.247 50.536C173.21 48.744 175.172 47.0373 177.135 45.416C178.5 44.3067 180.079 43.0693 181.871 41.704C183.663 40.2533 185.711 38.6747 188.015 36.968C191.258 34.4933 194.031 33.256 196.335 33.256C197.359 33.256 198.127 33.5547 198.639 34.152C199.236 34.664 199.322 35.2187 198.895 35.816L195.567 41.32C193.946 44.0507 192.623 46.2693 191.599 47.976C190.575 49.6827 189.892 50.8773 189.551 51.56C188.186 53.9493 186.735 56.68 185.199 59.752C183.663 62.7387 182.34 65.5973 181.231 68.328C180.207 71.0587 179.695 73.2773 179.695 74.984C179.695 76.8613 180.463 77.8 181.999 77.8C183.364 77.8 185.284 76.9893 187.759 75.368C190.234 73.6613 192.623 71.7413 194.927 69.608C201.156 63.8907 206.532 58.2587 211.055 52.712C215.663 47.08 219.674 40.6373 223.087 33.384C224.708 30.056 225.519 27.112 225.519 24.552C225.519 20.6267 223.3 18.6213 218.863 18.536C217.754 18.536 217.199 18.28 217.199 17.768C217.199 17.4267 217.412 17.0427 217.839 16.616C219.034 15.4213 220.57 14.824 222.447 14.824C224.58 14.824 226.372 15.5493 227.823 17C229.274 18.3653 229.999 20.3707 229.999 23.016C229.999 25.832 229.018 29.416 227.055 33.768C225.69 36.584 224.282 39.2293 222.831 41.704C221.466 44.1787 220.015 46.4827 218.479 48.616C216.431 51.432 214.426 53.992 212.463 56.296C210.586 58.5147 208.452 60.8187 206.063 63.208C203.674 65.5973 200.687 68.4987 197.103 71.912C195.482 73.448 193.604 74.9413 191.471 76.392C189.423 77.8427 187.375 79.0373 185.327 79.976C183.279 80.8293 181.487 81.256 179.951 81.256C177.05 81.256 175.599 79.5493 175.599 76.136C175.599 74.2587 176.111 71.784 177.135 68.712C177.562 67.2613 178.159 65.64 178.927 63.848C179.695 62.056 180.548 60.0933 181.487 57.96C182.084 56.7653 182.81 55.3147 183.663 53.608C184.516 51.816 185.498 49.8533 186.607 47.72C186.607 47.72 187.162 46.696 188.271 44.648C189.295 42.6853 189.807 41.2773 189.807 40.424C189.807 39.9973 189.679 39.784 189.423 39.784C189.167 39.784 188.655 40.04 187.887 40.552C183.194 43.88 179.226 46.8667 175.983 49.512C172.74 52.1573 169.668 55.016 166.767 58.088C165.572 59.4533 164.335 60.9467 163.055 62.568C161.775 64.1893 160.452 65.9387 159.087 67.816C156.271 74.3013 153.498 79.9333 150.767 84.712C148.036 89.576 145.69 92.776 143.727 94.312C141.679 95.848 139.972 96.616 138.607 96.616ZM222.475 82.408C220.683 82.408 219.104 81.9387 217.739 81C215.52 79.2933 214.411 76.7333 214.411 73.32C214.411 69.9067 215.606 66.28 217.995 62.44C220.384 58.6 224.011 55.0587 228.875 51.816C229.728 51.2187 230.88 50.92 232.331 50.92C234.208 50.92 235.872 51.432 237.323 52.456C238.859 53.48 239.456 54.8027 239.115 56.424C238.518 59.0693 237.195 61.416 235.147 63.464C233.184 65.512 230.838 67.3467 228.107 68.968C225.462 70.504 222.731 71.9973 219.915 73.448C219.83 73.704 219.744 73.96 219.659 74.216C219.659 74.472 219.659 74.728 219.659 74.984C219.659 76.1787 220.043 77.2453 220.811 78.184C221.664 79.0373 222.816 79.464 224.267 79.464C225.376 79.464 226.315 79.2933 227.083 78.952C228.448 78.44 229.558 77.9707 230.411 77.544C231.35 77.1173 232.416 76.4773 233.611 75.624C234.806 74.7707 236.427 73.4907 238.475 71.784C239.414 71.1013 239.968 70.76 240.139 70.76C240.651 70.76 240.822 71.144 240.651 71.912C239.798 73.2773 238.304 74.7707 236.171 76.392C234.123 78.0133 231.819 79.4213 229.259 80.616C226.784 81.8107 224.523 82.408 222.475 82.408ZM220.683 69.992C221.366 69.992 222.774 69.3093 224.907 67.944C227.04 66.5787 229.046 65.0853 230.923 63.464C234.166 60.4773 235.787 58.1733 235.787 56.552C235.787 56.1253 235.659 55.7413 235.403 55.4C235.147 54.9733 234.763 54.76 234.251 54.76C232.63 54.76 229.899 56.68 226.059 60.52C223.414 63.08 221.622 66.2373 220.683 69.992ZM240.938 89.448C239.999 89.448 239.189 89.1493 238.506 88.552C237.909 87.9547 237.653 87.2293 237.738 86.376C237.909 82.8773 238.549 79.5067 239.658 76.264C240.853 73.0213 242.559 69.1387 244.778 64.616C245.034 64.0187 245.247 63.5067 245.418 63.08C245.674 62.568 245.887 62.1413 246.058 61.8C247.935 57.7893 249.855 53.9493 251.818 50.28C253.781 46.6107 255.743 43.0267 257.706 39.528L259.498 36.328C261.546 32.6587 263.338 29.7147 264.874 27.496C266.41 25.192 267.946 23.528 269.482 22.504C271.445 21.3093 272.639 20.712 273.066 20.712C273.749 20.712 274.431 21.3093 275.114 22.504C275.541 23.3573 274.687 25.448 272.554 28.776C271.445 30.4827 270.037 32.616 268.33 35.176C266.709 37.736 264.746 40.6373 262.442 43.88C262.015 44.4773 261.29 45.544 260.266 47.08C259.327 48.5307 258.047 50.4507 256.426 52.84C254.805 55.2293 253.397 57.4053 252.202 59.368C251.007 61.2453 250.026 62.9093 249.258 64.36C247.722 67.176 246.271 70.2053 244.906 73.448C243.541 76.6053 242.858 79.08 242.858 80.872C242.858 82.4933 243.498 83.304 244.778 83.304C246.826 83.304 250.111 81.5547 254.634 78.056C255.146 78.1413 255.402 78.3973 255.402 78.824C255.402 79.1653 254.975 79.7627 254.122 80.616C253.354 81.384 252.373 82.1947 251.178 83.048C250.069 83.9867 248.746 85.0533 247.21 86.248L245.162 87.784C243.797 88.8933 242.389 89.448 240.938 89.448ZM273.488 52.968C272.379 52.968 271.824 52.712 271.824 52.2C271.824 51.7733 272.123 51.176 272.72 50.408C273.403 49.5547 274.171 48.8293 275.024 48.232C276.901 47.0373 278.352 46.0133 279.376 45.16C280.485 44.3067 281.808 42.856 283.344 40.808C283.429 40.9787 283.472 41.32 283.472 41.832C283.472 42.9413 283.003 44.3067 282.064 45.928C281.211 47.464 280.229 48.872 279.12 50.152C278.011 51.432 277.029 52.2427 276.176 52.584C275.408 52.84 274.512 52.968 273.488 52.968ZM262.096 84.328C261.413 84.328 260.773 84.072 260.176 83.56C259.579 83.048 259.28 82.3653 259.28 81.512C259.28 79.72 260.517 76.4347 262.992 71.656L264.4 68.84C264.571 68.6693 264.784 68.2427 265.04 67.56C265.381 66.8773 265.851 65.9813 266.448 64.872C267.045 63.6773 267.515 62.6107 267.856 61.672C268.197 60.7333 268.453 59.8373 268.624 58.984C268.624 58.8987 268.795 58.728 269.136 58.472C269.477 58.216 269.819 58.0027 270.16 57.832L270.928 57.704C271.611 57.704 272.165 57.832 272.592 58.088C273.104 58.344 273.275 58.6853 273.104 59.112C272.507 60.392 271.995 61.5013 271.568 62.44C271.141 63.3787 270.8 64.1893 270.544 64.872H270.416C269.477 67.0053 268.667 69.0533 267.984 71.016C267.387 72.8933 267.131 74.6853 267.216 76.392L267.344 79.848C267.259 80.7013 266.96 81.4267 266.448 82.024C266.107 82.28 265.637 82.5787 265.04 82.92C264.443 83.3467 263.675 83.7733 262.736 84.2C262.651 84.2853 262.437 84.328 262.096 84.328ZM274.944 83.048C273.408 83.048 272.64 82.4507 272.64 81.256C272.64 80.488 272.896 79.5067 273.408 78.312C274.005 77.1173 274.603 75.9653 275.2 74.856C276.821 71.9547 278.315 69.1387 279.68 66.408C281.045 63.6773 282.368 60.776 283.648 57.704C284.245 56.3387 285.141 55.656 286.336 55.656C287.616 55.656 288 56.424 287.488 57.96C286.976 59.24 286.464 60.392 285.952 61.416C283.563 66.28 282.368 69.5653 282.368 71.272C282.368 72.04 282.624 72.5093 283.136 72.68C284.331 71.7413 285.227 71.0587 285.824 70.632C286.421 70.12 286.763 69.8213 286.848 69.736C288.043 68.7973 289.365 67.7307 290.816 66.536C292.352 65.256 294.016 63.8053 295.808 62.184C298.624 59.624 300.971 58.344 302.848 58.344C305.152 58.344 306.133 60.4347 305.792 64.616C305.707 66.2373 305.707 67.816 305.792 69.352C305.877 69.6933 305.92 70.2053 305.92 70.888C305.92 71.4853 305.92 72.2107 305.92 73.064C305.92 73.9173 306.432 74.344 307.456 74.344C308.651 74.344 309.76 74.0027 310.784 73.32L313.6 71.4L316.416 69.608C316.587 69.5227 316.885 69.48 317.312 69.48C317.824 69.48 317.824 69.864 317.312 70.632C311.936 77.288 307.499 80.616 304 80.616C303.317 80.616 302.635 80.488 301.952 80.232C301.355 79.976 300.928 79.2507 300.672 78.056C300.416 76.776 300.245 75.4107 300.16 73.96C300.16 72.5093 300.16 71.4 300.16 70.632L300.288 66.408C300.288 64.616 299.819 63.72 298.88 63.72C296.661 63.72 291.2 68.2853 282.496 77.416C281.813 78.2693 280.747 79.4213 279.296 80.872C277.845 82.3227 276.395 83.048 274.944 83.048ZM317.298 108.52C315.421 108.52 313.885 107.624 312.69 105.832C311.41 104.125 310.77 102.163 310.77 99.944C310.77 98.152 311.026 96.8293 311.538 95.976C312.221 95.0373 312.861 94.568 313.458 94.568C314.141 94.568 314.482 94.952 314.482 95.72C314.482 96.4027 314.226 97.0853 313.714 97.768C313.373 98.1947 313.202 98.7493 313.202 99.432C313.202 100.712 313.629 101.992 314.482 103.272C315.335 104.552 316.359 105.192 317.554 105.192C317.725 105.192 317.895 105.149 318.066 105.064C318.237 105.064 318.45 105.021 318.706 104.936C322.717 103.4 326.386 100.2 329.714 95.336C333.042 90.3867 335.773 84.968 337.906 79.08C340.039 73.1067 341.618 67.6027 342.642 62.568L342.13 62.44C341.874 62.2693 341.49 62.4827 340.978 63.08C340.466 63.592 339.954 64.1893 339.442 64.872C338.93 65.4693 338.589 65.896 338.418 66.152C338.162 66.4933 337.479 67.2613 336.37 68.456C335.346 69.5653 334.109 70.8453 332.658 72.296C331.207 73.6613 329.757 75.0267 328.306 76.392C326.855 77.7573 325.618 78.8667 324.594 79.72C323.314 80.8293 321.735 81.384 319.858 81.384C319.346 81.384 318.834 81.2987 318.322 81.128C317.383 80.616 316.914 79.8053 316.914 78.696C316.914 77.2453 317.767 75.0267 319.474 72.04C320.754 69.8213 322.674 67.048 325.234 63.72C327.794 60.3067 330.61 57.4053 333.682 55.016C335.901 53.224 338.205 52.072 340.594 51.56C341.021 51.4747 341.447 51.432 341.874 51.432C342.301 51.3467 342.727 51.2613 343.154 51.176C343.581 51.176 343.965 51.176 344.306 51.176C344.647 51.176 344.989 51.1333 345.33 51.048C345.415 51.048 346.055 51.0053 347.25 50.92C348.53 50.7493 349.341 50.3227 349.682 49.64L350.066 49.512C350.407 49.512 350.749 49.6827 351.09 50.024C351.346 50.28 351.474 50.792 351.474 51.56C351.474 51.816 351.431 52.1573 351.346 52.584C351.261 52.9253 351.218 53.352 351.218 53.864V53.992C351.218 57.1493 350.621 60.4347 349.426 63.848C348.231 67.176 346.951 70.5893 345.586 74.088C342.77 81.1707 339.186 87.7413 334.834 93.8C330.567 99.8587 325.831 104.424 320.626 107.496C319.517 108.179 318.407 108.52 317.298 108.52ZM321.138 76.776C321.479 76.9467 321.735 77.032 321.906 77.032C322.333 77.032 322.973 76.8187 323.826 76.392C324.423 76.0507 325.021 75.624 325.618 75.112C326.301 74.6 327.069 74.0027 327.922 73.32C328.519 72.8933 329.202 72.296 329.97 71.528C330.738 70.76 331.634 69.864 332.658 68.84L335.09 66.536C336.285 65.3413 337.565 63.9333 338.93 62.312C340.295 60.6907 341.447 59.112 342.386 57.576C343.325 56.04 343.794 54.8453 343.794 53.992C343.794 53.224 343.325 52.84 342.386 52.84C341.447 52.84 340.167 53.352 338.546 54.376C337.01 55.4 335.389 56.6373 333.682 58.088C332.061 59.5387 330.653 60.9467 329.458 62.312C328.349 63.4213 327.282 64.6587 326.258 66.024C325.319 67.304 324.381 68.6693 323.442 70.12C322.333 71.7413 321.565 73.1493 321.138 74.344C320.626 75.624 320.626 76.4347 321.138 76.776ZM348.351 86.376C346.986 86.376 345.791 86.248 344.767 85.992C343.828 85.736 343.359 85.3947 343.359 84.968C343.359 84.2853 344.042 83.9013 345.407 83.816C346.687 83.7307 347.54 83.6027 347.967 83.432C348.735 83.2613 349.631 83.1333 350.655 83.048C351.594 82.8773 352.362 82.7493 352.959 82.664C357.055 81.4693 359.103 79.6347 359.103 77.16C359.103 75.4533 358.207 73.2773 356.415 70.632C355.306 69.0107 354.751 67.2187 354.751 65.256C354.751 62.8667 355.476 60.52 356.927 58.216C358.463 55.912 360.34 53.9067 362.559 52.2C364.863 50.408 367.167 49.2133 369.471 48.616C370.495 48.36 371.562 48.232 372.671 48.232C374.463 48.232 375.743 48.6587 376.511 49.512C377.023 50.024 377.279 51.1333 377.279 52.84C377.279 54.12 377.066 55.4427 376.639 56.808C376.212 58.088 375.615 59.1547 374.847 60.008C374.42 60.4347 374.079 60.648 373.823 60.648C373.396 60.648 373.183 60.0507 373.183 58.856L373.311 56.296C373.396 55.6133 373.439 55.016 373.439 54.504C373.524 53.992 373.567 53.5653 373.567 53.224C373.567 51.7733 373.268 50.92 372.671 50.664C371.988 50.4933 371.519 50.408 371.263 50.408C369.471 50.408 367.551 51.2187 365.503 52.84C363.455 54.4613 361.791 56.3387 360.511 58.472C359.999 59.24 359.743 60.1787 359.743 61.288C359.743 62.6533 360.084 64.2747 360.767 66.152C361.535 67.944 362.09 69.2667 362.431 70.12C363.284 71.9973 363.924 73.6187 364.351 74.984C364.863 76.3493 365.119 77.544 365.119 78.568C365.119 79.08 365.076 79.464 364.991 79.72C365.418 79.5493 366.442 79.2933 368.063 78.952C369.514 78.6107 370.751 78.44 371.775 78.44C372.372 78.44 372.671 78.568 372.671 78.824C372.671 78.9093 372.415 79.208 371.903 79.72C371.647 79.976 370.836 80.4027 369.471 81C368.191 81.512 366.655 82.0667 364.863 82.664C363.156 83.2613 361.45 83.816 359.743 84.328C358.036 84.84 356.586 85.224 355.391 85.48C353.343 86.0773 350.996 86.376 348.351 86.376Z"
+              fill="black"
+            />
+          </svg>
+
+          <h5>CHARLES WELINGS – OWNER</h5>
+        </div>
+
+        <div class="about-center">
+          <div class="about-img"><img src="/Images/about-photo.jpg" alt="" /></div>
+        </div>
+
+        <div class="time-is-money">
+          <p class="about-subT">Time is money</p>
+          <h1 class="about-title">Work Hours</h1>
+          <p class="about-subT">
+            Come and experience the classy atmosphere <br />
+            with delicious food and music.
+          </p>
+          <h3>OPENING HOURS:</h3>
+          <h5>
+            Monday – Friday : 9.00am – 22.00pm <br />
+            Saturday: 10.00am – 23.00pm <br />
+            Sunday: 5.00pm – 23.00pm <br />
+            Holidays: Closed
+          </h5>
+          <p>Urban Time: 15.00pm – 18.00pm</p>
+          <p>Private parties can be held on holidays</p>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------------- VIDEO -->
+
+    <section class="video">
+      <div class="video-content-wrapper">
+        <div class="video-player">
+          <div class="circle">
+            <div class="play"></div>
+          </div>
+          <div class="video-iframe v-hidden">
+            <div class="button-close-video">
+              <div class="slash-1"></div>
+              <div class="slash-2"></div>
+            </div>
+            <iframe
+              class="v-iframe"
+              src="https://www.youtube.com/embed/QnMhoBRnd1c?si=LuQYrnbfq0qiq3kh"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="overlay v-hidden"></div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------------- PRIVATE EVENTS -->
+
+    <section class="private-events">
+      <div class="private-events-info">
+        <p>Private events</p>
+        <h1>Perfect place for your events</h1>
+        <p>
+          Be it a corporate event, cocktail party, luncheon, dinner, meeting, shower, wedding reception,
+          bar/bat mitzvah, or rehearsal dinner, we promise to provide a memorable experience for you and your
+          guests
+        </p>
+        <button>BOOK NOW</button>
+      </div>
+      <div class="private-events-img-wrapper">
+        <div class="private-events-img"><img src="/Images/private-events-photo.jpg" alt="" /></div>
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------------- RESTAURANT INFO -->
+
+    <section class="restaurant-info">
+      <div class="restaurant-info-content-wrapper">
+        <div class="ic1">
+          <h3>300</h3>
+          <p>costumers per day</p>
+        </div>
+        <div class="ics"></div>
+        <div class="ic2">
+          <h3>7</h3>
+          <p>prestigious awards</p>
+        </div>
+        <div class="ics"></div>
+        <div class="ic3">
+          <h3>13</h3>
+          <p>years of operation</p>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------------- FOOD SLIDER -->
+
+    <section class="food-slider" id="tranding">
+      <div class="food-slider-content-wrapper">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="/Images/food-showcase/food1.jpg" alt="Tranding" />
+              </div>
+              <div class="tranding-slide-content">
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">Food name</h2>
+                  <h5 class="food-des">food description</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="/Images/food-showcase/food3.jpg" alt="Tranding" />
+              </div>
+              <div class="tranding-slide-content">
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">Food name</h2>
+                  <h5 class="food-des">food description</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="/Images/food-showcase/food4.jpg" alt="Tranding" />
+              </div>
+              <div class="tranding-slide-content">
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">Food name</h2>
+                  <h5 class="food-des">food description</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="/Images/food-showcase/food5.jpg" alt="Tranding" />
+              </div>
+              <div class="tranding-slide-content">
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">Food name</h2>
+                  <h5 class="food-des">food description</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="/Images/food-showcase/food6.jpg" alt="Tranding" />
+              </div>
+              <div class="tranding-slide-content">
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name">Food name</h2>
+                  <h5 class="food-des">food description</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------------- MENU -->
+    <section class="menu">
+      <div class="menu-intro">
+        <p>What food do we have in our restaurant?</p>
+        <h1 class="our-menu-t">Our Menu</h1>
+        <p>
+          We always give our customers a feeling of peace of mind and comfort when dining at our restaurant.
+          <br />
+          Born from the very sense of guilt, every mistake leads to accusation.
+        </p>
+      </div>
+
+      <div class="menu-buttons">
+        <button class="popular" id="active-btn">POPULAR</button>
+        <button class="see-food">SEE FOOD</button>
+        <button class="desserts">DESSERTS</button>
+        <button class="drinks">DRINKS</button>
+      </div>
+
+      <div class="menu-page">
+        <div class="left-img"></div>
+        <!-- POPULAR -->
+
+        <div class="central-menu">
+          <div class="popular-food catalog" id="catalog-active">
+            <div class="first-food food-txt">
+              <div class="food-head">
+                <h3>FOOD NUMBER ONE</h3>
+                <span class="separator"></span>
+                <h4>$10</h4>
+              </div>
+              <p>food number one description</p>
+            </div>
+
+            <div class="second-food food-txt">
+              <div class="food-head">
+                <h3>FOOD NUMBER TWO</h3>
+                <span class="separator"></span>
+                <h4>$27</h4>
+              </div>
+              <p>food number two description</p>
+            </div>
+
+            <div class="third-food food-txt">
+              <div class="food-head">
+                <h3>FOOD NUMBER THREE</h3>
+                <span class="separator"></span>
+                <h4>$38</h4>
+              </div>
+              <p>food number three description</p>
+            </div>
+
+            <div class="forth-food food-txt">
+              <div class="food-head">
+                <h3>FOOD NUMBER FOUR</h3>
+                <span class="separator"></span>
+                <h4>$49</h4>
+              </div>
+              <p>food number four description</p>
+            </div>
+
+            <div class="fifth-food food-txt">
+              <div class="food-head">
+                <h3>FOOD NUMBER FIVE</h3>
+                <span class="separator"></span>
+                <h4>$55</h4>
+              </div>
+              <p>food number five description</p>
+            </div>
+
+            <div class="sixth-food food-txt">
+              <div class="food-head">
+                <h3>FOOD NUMBER SIX</h3>
+                <span class="separator"></span>
+                <h4>$66</h4>
+              </div>
+              <p>food number six description</p>
+            </div>
+            <button class="btn-food-menu">VIEW FULL MENU</button>
+          </div>
+
+          <!-- SEE FOOD -->
+
+          <div class="popular-food catalog">
+            <div class="first-food food-txt">
+              <div class="food-head">
+                <h3>SEE FOOD NUMBER ONE</h3>
+                <span class="separator"></span>
+                <h4>$10</h4>
+              </div>
+              <p>see food number one description</p>
+            </div>
+
+            <div class="second-food food-txt">
+              <div class="food-head">
+                <h3>SEE FOOD NUMBER TWO</h3>
+                <span class="separator"></span>
+                <h4>$27</h4>
+              </div>
+              <p>see food number two description</p>
+            </div>
+
+            <div class="third-food food-txt">
+              <div class="food-head">
+                <h3>SEE FOOD NUMBER THREE</h3>
+                <span class="separator"></span>
+                <h4>$38</h4>
+              </div>
+              <p>see food number three description</p>
+            </div>
+
+            <div class="forth-food food-txt">
+              <div class="food-head">
+                <h3>SEE FOOD NUMBER FOUR</h3>
+                <span class="separator"></span>
+                <h4>$49</h4>
+              </div>
+              <p>see food number four description</p>
+            </div>
+
+            <div class="fifth-food food-txt">
+              <div class="food-head">
+                <h3>SEE FOOD NUMBER FIVE</h3>
+                <span class="separator"></span>
+                <h4>$55</h4>
+              </div>
+              <p>see food number five description</p>
+            </div>
+
+            <div class="sixth-food food-txt">
+              <div class="food-head">
+                <h3>SEE FOOD NUMBER SIX</h3>
+                <span class="separator"></span>
+                <h4>$66</h4>
+              </div>
+              <p>see food number six description</p>
+            </div>
+            <button class="btn-food-menu">VIEW FULL MENU</button>
+          </div>
+
+          <!-- DESSERTS -->
+
+          <div class="popular-food catalog">
+            <div class="first-food food-txt">
+              <div class="food-head">
+                <h3>DESSERT NUMBER ONE</h3>
+                <span class="separator"></span>
+                <h4>$10</h4>
+              </div>
+              <p>dessert number one description</p>
+            </div>
+
+            <div class="second-food food-txt">
+              <div class="food-head">
+                <h3>DESSERT NUMBER TWO</h3>
+                <span class="separator"></span>
+                <h4>$27</h4>
+              </div>
+              <p>dessert number two description</p>
+            </div>
+
+            <div class="third-food food-txt">
+              <div class="food-head">
+                <h3>DESSERT NUMBER THREE</h3>
+                <span class="separator"></span>
+                <h4>$38</h4>
+              </div>
+              <p>dessert number three description</p>
+            </div>
+
+            <div class="forth-food food-txt">
+              <div class="food-head">
+                <h3>DESSERT NUMBER FOUR</h3>
+                <span class="separator"></span>
+                <h4>$49</h4>
+              </div>
+              <p>dessert number four description</p>
+            </div>
+
+            <div class="fifth-food food-txt">
+              <div class="food-head">
+                <h3>DESSERT NUMBER FIVE</h3>
+                <span class="separator"></span>
+                <h4>$55</h4>
+              </div>
+              <p>dessert number five description</p>
+            </div>
+
+            <div class="sixth-food food-txt">
+              <div class="food-head">
+                <h3>DESSERT NUMBER SIX</h3>
+                <span class="separator"></span>
+                <h4>$66</h4>
+              </div>
+              <p>dessert number six description</p>
+            </div>
+            <button class="btn-food-menu">VIEW FULL MENU</button>
+          </div>
+
+          <!-- DRINS -->
+
+          <div class="popular-food catalog">
+            <div class="first-food food-txt">
+              <div class="food-head">
+                <h3>DRINK NUMBER ONE</h3>
+                <span class="separator"></span>
+                <h4>$10</h4>
+              </div>
+              <p>drink number one description</p>
+            </div>
+
+            <div class="second-food food-txt">
+              <div class="food-head">
+                <h3>DRINK NUMBER TWO</h3>
+                <span class="separator"></span>
+                <h4>$27</h4>
+              </div>
+              <p>drink number two description</p>
+            </div>
+
+            <div class="third-food food-txt">
+              <div class="food-head">
+                <h3>DRINK NUMBER THREE</h3>
+                <span class="separator"></span>
+                <h4>$38</h4>
+              </div>
+              <p>drink number three description</p>
+            </div>
+
+            <div class="forth-food food-txt">
+              <div class="food-head">
+                <h3>DRINK NUMBER FOUR</h3>
+                <span class="separator"></span>
+                <h4>$49</h4>
+              </div>
+              <p>drink number four description</p>
+            </div>
+
+            <div class="fifth-food food-txt">
+              <div class="food-head">
+                <h3>DRINK NUMBER FIVE</h3>
+                <span class="separator"></span>
+                <h4>$55</h4>
+              </div>
+              <p>drink number five description</p>
+            </div>
+
+            <div class="sixth-food food-txt">
+              <div class="food-head">
+                <h3>DRINK NUMBER SIX</h3>
+                <span class="separator"></span>
+                <h4>$66</h4>
+              </div>
+              <p>drink number six description</p>
+            </div>
+            <button class="btn-food-menu">VIEW FULL MENU</button>
+          </div>
+        </div>
+
+        <div class="right-img"></div>
+      </div>
+    </section>
+    <br /><br /><br />
+
+    <!---------------------------------------------------------------------------------------------------------------------------- CHEF -->
+
+    <section class="chef">
+      <div class="chef-container">
+        <div class="left">
+          <h3>Quality & Precision</h3>
+          <h1>Our Food Manifesto</h1>
+          <p>
+            Our culinary team, led by renowned chef Alexander Petillo, brings together flavors and specialties
+            from Italy and beyond to create a unique gastronomic experience. Each dish is a masterpiece of
+            surprising artistry, meticulously balanced and beautifully presented.
+          </p>
+          <button class="btn-chef">VIEW ALL CHEF</button>
+        </div>
+        <div class="right">
+          <div class="img-holder"><img src="/Images/chef-image.jpg" alt="Photo of chef" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------------- BOOKING -->
+
+    <section class="booking" id="booking">
+      <div class="booking-container">
+        <div class="left">
+          <div class="book-txt">
+            <p>Reservations</p>
+            <h1>BOOKING</h1>
+            <p>We will call customers to confirm, so please fill in your name and phone number</p>
+          </div>
+          <!-- prettier-ignore -->
+          <div class="inputs">
+            <form action="">
+              <div class="break-separator-1">
+                <input type="text" name="name" placeholder="Full Name" class="contact-input contact-input-style" required />
+                <input type="email" name="email" placeholder="Email" class="contact-input contact-input-style" required />
+              </div>
+              <div class="break-separator-2">
+                <select class=" contact-input-style" id="people-count" name="people-count" required>
+                  <option value="2">2 Person</option>
+                  <option value="3">3 Person</option>
+                  <option value="4">4 Person</option>
+                  <option value="5">5 Person</option>
+                  <option value="6">6 Person</option>
+                </select>
+                <div class="half-contact-input">
+                  <input type="time" class="contact-input-style half-contact-input-input" id="reservation-time" name="reservation-time" min="09:00" max="22:00" step="1800">
+                  <input type="date" class="contact-input-style half-contact-input-input" id="reservation-time" name="reservation-time">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="center">
+          <div class="m-iframe">
+            <iframe
+              class="iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11573.75478887463!2d172.553976706937!3d-43.51404372559169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d31f5bcc04abcf3%3A0xf32b5cad88cf7b07!2sSkibidi%20Toilet!5e0!3m2!1sen!2sba!4v1738161964724!5m2!1sen!2sba"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="right">
+          <div class="book-txt">
+            <p>Location</p>
+            <h1>FIND US</h1>
+            <p>It's inconvenient to not know the address, below is full information of the restaurant</p>
+          </div>
+          <div class="info">
+            <h3>CONTACT US :</h3>
+            <h5>+1 123 456 789</h5>
+            <p>XX Example location, City</p>
+            <p>restaraunt@example.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------------- FOOTER IMAGE -->
+
+    <section class="footer-image">
+      <div class="footer-img-wrapper">
+        <div class="footer-img-content-tr"></div>
+      </div>
+    </section>
+
+    <!---------------------------------------------------------------------------------------------------------------------------- NEWSLETTER -->
+
+    <section class="newsletter">
+      <div class="newsletter-content">
+        <h3>Sign up to reciece our news and offers</h3>
+        <!-- prettier-ignore -->
+        <div class="newsletter-input-wrapper">
+          <input type="email" name="email" placeholder="Email" class="newsletter-input contact-input-style" required />
+          <button>Sign up</button>
+         </div>
+        <p>*We will never spam you and you can unsubscribe at any time</p>
+      </div>
+    </section>
+
+    <div class="hr"></div>
+
+    <!---------------------------------------------------------------------------------------------------------------------------- FOOTER -->
+
+    <section class="footer">
+      <footer>
+        <div class="l-footer-wrapper">
+          <div class="fl-footer">
+            <img src="/Images/Logo.png" alt="Logo of restaraunt" />
+          </div>
+          <div class="cl-footer">
+            <h3>Our Policy</h3>
+            <p>
+              At our company, customer care is our highest priority. We dedicate ourselves to providing
+              exceptional service and strive for excellence in all aspects of our business.
+            </p>
+            <div class="socials">
+              <div class="social-1 fohef"><img src="/Images/facebook_logo.png" alt="" /></div>
+              <div class="social-2 fohef"><img src="/Images/facebook_logo.png" alt="" /></div>
+              <div class="social-3 fohef"><img src="/Images/facebook_logo.png" alt="" /></div>
+              <div class="social-4 fohef"><img src="/Images/facebook_logo.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="r-footer-wrapper">
+          <div class="cr-footer">
+            <h3>Open Hour</h3>
+            <h4>Monday - Friday</h4>
+            <p>9.00am - 22.00pm</p>
+            <h4>Saturday</h4>
+            <p>10.00am - 23.00pm</p>
+            <h4>Sunday</h4>
+            <p>5.00pm - 23.00pm</p>
+            <h4>Holidays</h4>
+            <p>Closed</p>
+          </div>
+          <div class="fr-footer">
+            <h3>Our Address</h3>
+            <h4>Location</h4>
+            <p>XX Example location, City</p>
+            <h4>Email address</h4>
+            <p>retaurant@example.com</p>
+            <h4>Call phone</h4>
+            <p>+1 123 456 789</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <section class="copyright">
+      <div class="rights">
+        <p>Copyright © 2024. All Rights Reserved.</p>
+      </div>
+      <div class="forms">
+        <a href="#">PRIVACY</a>
+        <a href="#">TERMS OF USE</a>
+        <a href="#">POLICY</a>
+      </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="slider.js"></script>
+  </body>
+</html>

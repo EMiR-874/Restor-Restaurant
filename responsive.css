@@ -1,0 +1,951 @@
+@media (max-width: 990px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .tranding-slide {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+  .tranding-slide .tranding-slide-img img {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  #tranding {
+    padding: 7rem 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #tranding .tranding-slider {
+    height: 45rem;
+  }
+}
+
+/* RESPONSIVE STARTS HERE __________________________1444_____________________________ */
+
+@media (max-width: 1440px) {
+  .nav-logo {
+    padding: 0 20px;
+  }
+  .nav-links {
+    gap: 43px;
+  }
+
+  .nl {
+    width: 80px;
+    height: 40px;
+  }
+  .welcome-text-style {
+    padding-left: 10%;
+  }
+
+  .about-content-wrapper {
+    width: 100%;
+  }
+  .about-subT {
+    font-size: 28px;
+  }
+  .about-title {
+    font-size: 60px;
+  }
+  .our-vision {
+    padding-left: 1.5%;
+  }
+  .time-is-money {
+    padding-right: 1.5%;
+  }
+  .our-vision,
+  .time-is-money {
+    max-width: 450px;
+  }
+  .our-vision p:nth-child(3),
+  .time-is-money p:nth-child(3) {
+    font-size: 25px;
+  }
+  .our-vision p:nth-child(4) {
+    width: 350px;
+    font-size: 14px;
+  }
+  .about-center {
+    width: 450px;
+    height: 650px;
+  }
+  .time-is-money h3 {
+    font-size: 22px;
+  }
+  .time-is-money h5 {
+    font-size: 18px;
+  }
+
+  .private-events {
+    width: 97%;
+  }
+
+  .restaurant-info-content-wrapper {
+    width: 90%;
+  }
+
+  .menu-page {
+    width: 97%;
+  }
+  .central-menu {
+    width: 730px;
+    height: 700px;
+  }
+  .catalog {
+    gap: 40px;
+  }
+  .right-img,
+  .left-img {
+    height: 700px;
+    width: 280px;
+  }
+
+  .chef-container {
+    width: 97%;
+  }
+  .chef-container h1 {
+    font-size: 73px;
+  }
+  .chef-container p {
+    font-size: 24px;
+  }
+  .chef-container .right img {
+    height: 750px;
+  }
+
+  .booking-container {
+    width: 97%;
+  }
+  .iframe {
+    width: 430px;
+    height: 430px;
+  }
+}
+
+/* NEW RESPONSIVE STARTS HERE __________________________1111_____________________________ */
+
+@media (max-width: 1111px) {
+  .nav-dropdown {
+    display: none;
+  }
+
+  .booking-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .booking-container .book-txt h1 {
+    font-size: 69px;
+  }
+  .booking-container .book-txt p {
+    font-size: 36px;
+  }
+  .break-separator-1,
+  .break-separator-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  #reservation-time:first-of-type {
+    margin-right: 2%;
+  }
+  .iframe {
+    width: 600px;
+    height: 600px;
+    border-radius: 50px;
+    margin: 5% 0;
+  }
+  .booking-container .right {
+    width: 100%;
+    text-align: center;
+  }
+  .booking-container .info p {
+    font-size: 20px;
+  }
+}
+
+/* NEW RESPONSIVE STARTS HERE __________________________1024_____________________________ */
+
+@media (max-width: 1024px) {
+  section {
+    width: 100%;
+  }
+  .upper-nav {
+    font-size: 18px;
+  }
+  .upper-nav-info {
+    padding-left: 1%;
+    gap: 20px;
+  }
+  .upper-nav-info p::before {
+    content: "•";
+    font-size: 60px;
+    margin-right: 5px;
+  }
+  .upper-nav-controls {
+    padding-right: 1%;
+    gap: 30px;
+  }
+  .upper-nav-controls button {
+    width: 180px;
+    height: 40px;
+  }
+  .nav-logo {
+    padding: 0 10px;
+    font-size: 25px;
+  }
+  .nav-logo img {
+    height: 80px;
+  }
+  .nav-links {
+    font-size: 30px;
+    gap: 30px;
+  }
+  .nav-dropdown {
+    min-width: 170px;
+  }
+  .nl {
+    width: 50px;
+  }
+
+  .welcome-text-style {
+    padding-left: 5%;
+    gap: 60px;
+  }
+
+  .about-content-wrapper {
+    flex-direction: column;
+  }
+  .our-vision,
+  .time-is-money {
+    min-width: 100%;
+    padding: 0;
+  }
+  .about-subT {
+    font-size: 36px;
+  }
+  .about-title {
+    font-size: 69px;
+  }
+  .our-vision p:nth-child(4) {
+    margin-top: 10px;
+    min-width: 600px;
+    font-size: 16px;
+  }
+
+  .about-center {
+    width: 800px;
+    height: 700px;
+    border-radius: 50px;
+    margin-bottom: 5%;
+  }
+  .about-img img {
+    top: -10%;
+    right: -45%;
+    transform: translateX(-50%);
+  }
+  .time-is-money h3 {
+    font-size: 24px;
+  }
+  .time-is-money h5 {
+    font-size: 20px;
+  }
+
+  .private-events {
+    flex-direction: column;
+    gap: 80px;
+    text-align: center;
+  }
+  .private-events h1::after {
+    width: 75%;
+  }
+
+  .private-events-info p:last-of-type {
+    max-width: 90%;
+    margin: 0 auto 50px;
+  }
+  .private-events-img-wrapper {
+    width: 800px;
+    height: 700px;
+    border-radius: 50px;
+    margin: 0 auto;
+  }
+  .private-events-img {
+    top: 0;
+  }
+
+  .restaurant-info-content-wrapper {
+    width: 95%;
+  }
+  .restaurant-info-content-wrapper h3 {
+    font-size: 75px;
+  }
+  .restaurant-info-content-wrapper p {
+    font-size: 30px;
+  }
+
+  .menu-buttons button {
+    width: 200px;
+    height: 65px;
+    font-size: 30px;
+  }
+  .menu-page {
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+  }
+  .left-img,
+  .right-img {
+    width: 800px;
+    height: 700px;
+    border-radius: 50px;
+  }
+  .right-img {
+    background-position: bottom;
+  }
+  .central-menu {
+    width: 90%;
+    height: 800px;
+  }
+  .catalog {
+    gap: 50px;
+  }
+
+  .chef-container {
+    flex-direction: column;
+    gap: 80px;
+    text-align: center;
+  }
+  .chef-container h1::after {
+    width: 75%;
+  }
+  .chef-container p {
+    max-width: 90%;
+    margin: 0 auto 50px;
+  }
+  .chef-container button {
+    margin: 0 auto;
+  }
+  .chef-container .right {
+    width: 800px;
+    height: 700px;
+    border-radius: 50px;
+    margin: 0 auto;
+    background: url(/Images/chef-image.jpg) center / cover no-repeat;
+    background-color: rebeccapurple;
+  }
+  .chef-container .right img {
+    display: none;
+  }
+
+  footer {
+    width: 97%;
+  }
+  .fl-footer img {
+    height: 30cap;
+  }
+}
+
+/* NEW RESPONSIVE STARTS HERE _________________________1000_____________________________ */
+@media (max-width: 1000px) {
+  nav {
+    position: relative;
+    background-color: var(--bg);
+  }
+  nav .nav-links {
+    display: none;
+  }
+  .nav-logo {
+    min-width: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    border-right: 0;
+    padding: 0 2%;
+  }
+  .nav-logo h3 {
+    font-size: 50px;
+  }
+  .rnl {
+    display: inline-flex;
+  }
+  .rnl.clicked {
+    transition: all 1s ease-in-out;
+  }
+  .rnl.clicked .rnl1,
+  .rnl.clicked .rnl2 {
+    transform: rotate(45deg);
+    left: 0;
+    top: 50%;
+    width: 40px;
+  }
+  .rnl.clicked .rnl3 {
+    transform: rotate(-45deg);
+    left: 37%;
+    top: 50%;
+    width: 40px;
+  }
+
+  nav.show {
+    position: relative;
+  }
+  nav.show .nav-links {
+    top: 100%;
+    padding: 2% 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(133, 133, 133, 0.4);
+    backdrop-filter: blur(5px);
+    animation: dropdownAnim 0.5s ease 0s 1 normal forwards;
+  }
+
+  @keyframes dropdownAnim {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .ics {
+    display: none;
+  }
+}
+
+/* NEW RESPONSIVE STARTS HERE __________________________968_____________________________ */
+
+@media (max-width: 968px) {
+  section {
+    width: 100%;
+    overflow: hidden;
+  }
+  .upper-nav {
+    display: none;
+  }
+  .nav-dropdown {
+    display: none;
+  }
+  .nav-logo img {
+    height: 60px;
+  }
+  .nav-links {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .welcome-text-style {
+    text-align: center;
+  }
+  .welcome-text-style p:first-of-type {
+    font-size: 35px;
+  }
+  .welcome-text-style p:last-of-type {
+    font-size: 20px;
+  }
+
+  .about-img img {
+    top: -25%;
+    right: -60%;
+  }
+
+  .about-center,
+  .private-events-img-wrapper,
+  .left-img,
+  .right-img,
+  .chef-container .right {
+    width: 90%;
+  }
+
+  .menu-buttons button {
+    width: 150px;
+    height: 45px;
+    font-size: 25px;
+  }
+
+  .newsletter-input {
+    min-width: 350px;
+  }
+}
+
+/* NEW RESPONSIVE STARTS HERE __________________________880_____________________________ */
+
+@media (max-width: 880px) {
+  .menu-buttons {
+    margin-top: 100px;
+  }
+  .menu-buttons button {
+    width: 170px;
+    height: 55px;
+    font-size: 30px;
+  }
+  .fl-footer img {
+    height: 20cap;
+  }
+  .cl-footer p {
+    max-width: 200px;
+  }
+  footer h3 {
+    font-size: 28px;
+  }
+  footer h4 {
+    font-size: 18px;
+  }
+  .cl-footer .socials div {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+/* NEW RESPONSIVE STARTS HERE __________________________780_____________________________ */
+
+@media (max-width: 780px) {
+  .booking-container .left {
+    width: 100%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+
+/* NEW RESPONSIVE STARTS HERE __________________________740_____________________________ */
+
+@media (max-width: 740px) {
+  .restaurant-info-content-wrapper p {
+    font-size: 25px;
+  }
+  .menu-buttons button {
+    width: 150px;
+    height: 45px;
+    font-size: 25px;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .l-footer-wrapper,
+  .r-footer-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+/* NEW RESPONSIVE STARTS HERE __________________________680_____________________________ */
+
+@media (max-width: 680px) {
+  .welcome-text-style {
+    padding-left: 0;
+    gap: 60px;
+  }
+  .menu-buttons button {
+    width: 120px;
+    height: 35px;
+    font-size: 22px;
+  }
+
+  .chef-container .left h1 {
+    font-size: 60px;
+  }
+}
+
+/* NEW RESPONSIVE STARTS HERE __________________________630_____________________________ */
+
+@media (max-width: 630px) {
+  .m-iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .iframe {
+    width: 90%;
+    height: 600px;
+  }
+  .booking-container .center {
+    width: 100%;
+    padding: 15% 0;
+  }
+}
+
+/* NEW RESPONSIVE STARTS HERE __________________________580_____________________________ */
+
+@media (max-width: 580px) {
+  .welcome-text-style h1 {
+    font-size: 80px;
+  }
+  .welcome-text-style p:first-of-type {
+    font-size: 32px;
+  }
+  .welcome-text-style p:last-of-type {
+    font-size: 18px;
+    width: 97%;
+  }
+  .our-vision p:nth-child(4) {
+    margin-top: 10px;
+    min-width: 90%;
+    font-size: 15px;
+  }
+  .private-events-info p:last-of-type {
+    max-width: 90%;
+    margin: 0 auto 50px;
+    font-size: 23px;
+  }
+  .private-events button {
+    height: 60px;
+    width: 250px;
+    font-size: 30px;
+  }
+  .restaurant-info-content-wrapper p {
+    font-size: 22px;
+  }
+  .catalog {
+    margin-top: 10%;
+  }
+  .food-txt h3 {
+    font-size: 22px;
+  }
+  .food-txt h4 {
+    font-size: 28px;
+  }
+  .food-txt p {
+    font-size: 14px;
+  }
+  .chef-container .left h1 {
+    font-size: 55px;
+  }
+  .chef-container .left p {
+    font-size: 20px;
+  }
+  .chef-container .left button {
+    height: 60px;
+    width: 250px;
+    font-size: 30px;
+  }
+  .newsletter-content {
+    padding-bottom: 10%;
+  }
+  .hr {
+    display: block;
+  }
+  .newsletter-input {
+    min-width: 80%;
+  }
+  .newsletter-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .newsletter-input-wrapper button {
+    height: 60px;
+    width: 250px;
+    font-size: 30px;
+  }
+}
+
+/* NEW RESPONSIVE STARTS HERE __________________________535_____________________________ */
+
+@media (max-width: 535px) {
+  .copyright {
+    width: 95%;
+  }
+  .forms {
+    gap: 5px;
+  }
+  .menu-intro h1 {
+    font-size: 60px;
+  }
+  .booking-container .book-txt h1 {
+    font-size: 50px;
+  }
+}
+
+/* NEW RESPONSIVE STARTS HERE __________________________425_____________________________ */
+
+@media (max-width: 425px) {
+  .welcome-text-style h1 {
+    font-size: 80px;
+  }
+  .welcome-text-style p:first-of-type {
+    font-size: 28px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .welcome-text-style p:last-of-type {
+    font-size: 15px;
+    width: 93%;
+    margin: 0 auto;
+  }
+  .about-center,
+  .private-events-img-wrapper,
+  .left-img,
+  .right-img,
+  .chef-container .right {
+    width: 90%;
+    height: 550px;
+  }
+  .private-events-img {
+    top: -35%;
+    left: -77%;
+  }
+  .about-img img {
+    top: -45%;
+    left: -110%;
+  }
+  .restaurant-info-content-wrapper {
+    width: 98%;
+    text-align: center;
+  }
+  .menu-intro {
+    text-align: center;
+  }
+  .menu-intro p:last-of-type {
+    width: 90%;
+  }
+  .menu-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    column-gap: 10px;
+  }
+  .menu-buttons .popular,
+  .menu-buttons .desserts {
+    justify-self: right;
+  }
+  .menu-buttons button {
+    width: 150px;
+    height: 45px;
+    font-size: 24px;
+  }
+  .left-img {
+    display: none;
+  }
+  .catalog {
+    margin: 5% 0;
+  }
+  .central-menu {
+    width: 95%;
+    border-radius: 5px;
+    height: fit-content;
+  }
+  .food-txt p,
+  .central-menu .food-head {
+    margin: 0 20px;
+  }
+  .btn-food-menu {
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+  }
+  .booking-container .book-txt p {
+    font-size: 36px;
+  }
+  .contact-input {
+    width: 92%;
+  }
+  .newsletter-content p:last-of-type {
+    font-size: 15px;
+  }
+  .copyright p {
+    font-size: 12px;
+  }
+  .copyright {
+    padding: 20px 0;
+  }
+}
+
+/* NEW RESPONSIVE STARTS HERE __________________________375_____________________________ */
+
+@media (max-width: 375px) {
+  .nav-logo h1 {
+    font-size: 45px;
+  }
+  .about-img img {
+    left: -134%;
+  }
+  .time-is-money {
+    padding-bottom: 15%;
+  }
+  .private-events-img {
+    left: -89%;
+  }
+  .restaurant-info-content-wrapper {
+    flex-direction: column;
+    gap: 50px;
+    margin: 30px 0;
+  }
+
+  .menu-intro p:last-of-type {
+    font-size: 20px;
+  }
+  .food-txt p,
+  .central-menu .food-head {
+    margin: 0 10px;
+  }
+  .food-txt h3 {
+    font-size: 21px;
+  }
+  .food-txt h4 {
+    font-size: 25px;
+  }
+  .chef-container .left h1 {
+    font-size: 65px;
+  }
+
+  .newsletter-content h3 {
+    font-size: 45px;
+  }
+  .newsletter-input-wrapper button {
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+  }
+  .l-footer-wrapper,
+  .r-footer-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+  }
+  footer {
+    padding: 50px 20px 10px 20px;
+  }
+  .fl-footer img {
+    height: 20cap;
+    padding-bottom: 5%;
+  }
+  .cl-footer p {
+    font-size: 15px;
+    max-width: 80%;
+  }
+  footer h3 {
+    font-size: 42px;
+  }
+  footer h4 {
+    font-size: 20px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+  .cl-footer,
+  .cr-footer,
+  .fl-footer,
+  .fr-footer {
+    margin-bottom: 3%;
+  }
+  .copyright a {
+    font-size: 14px;
+  }
+}
+
+/* NEW RESPONSIVE STARTS HERE __________________________355_____________________________ */
+
+@media (max-width: 355px) {
+  .nav-logo img {
+    height: 55px;
+  }
+  .nav-logo h3 {
+    font-size: 45px;
+  }
+  .nav-logo .rnl {
+    height: 30px;
+  }
+  .nav-logo .rnl1,
+  .nav-logo .rnl2,
+  .nav-logo .rnl3 {
+    width: 50px;
+  }
+  .our-vision p:nth-child(3) {
+    font-size: 30px;
+  }
+  .our-vision p:last-of-type {
+    width: 97%;
+  }
+  .booking-container .book-txt h1 {
+    font-size: 45px;
+  }
+  .break-separator-1,
+  .break-separator-2 {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .iframe {
+    height: 450px;
+    border-radius: 30px;
+  }
+  .menu-intro h1 {
+    font-size: 50px;
+  }
+  .break-separator-1 {
+    width: 75%;
+    margin: 0 8%;
+  }
+  .break-separator-2 {
+    width: 77%;
+    margin: 0 8%;
+  }
+  .copyright {
+    flex-direction: column-reverse;
+    gap: 10px;
+    padding: 3px;
+  }
+  .forms {
+    gap: 20px;
+  }
+  .copyright a {
+    font-size: 20px;
+  }
+}
+
+/* NEW RESPONSIVE STARTS HERE __________________________330_____________________________ */
+
+@media (max-width: 330px) {
+  form {
+    padding: 0;
+    margin: 0;
+  }
+}
